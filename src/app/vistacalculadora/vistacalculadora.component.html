@@ -1,0 +1,16 @@
+<div class="vista-container">
+    <form class="form-container">
+        <label class="label" for="numero1">Numero 1</label>
+        <input id="numero1" name="numero1" [(ngModel)]="numero1">
+
+        <label class="label" for="numero2">Numero 2</label>
+        <input id="numero2" name="numero2" [(ngModel)]="numero2">
+        <button class="boton" (click)="calcularOperaciones()">Calcular</button>
+    </form>
+
+    <div class="resultado">
+        <h1>El resultado es:</h1>
+        <p>Suma: {{suma}} <br> Resta: {{resta}} <br> 
+            Multiplicación: {{multiplicacion}} <br> División: {{division}}</p>
+    </div>
+</div>
